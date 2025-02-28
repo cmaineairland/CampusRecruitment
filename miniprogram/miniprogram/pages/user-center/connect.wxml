@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="header">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <text class="username">{{username}}</text>
+  </view>
+  <view class="menu">
+    <navigator url="/pages/order/order" class="menu-item">
+      <text class="menu-item-text">我的申请</text>
+    </navigator>
+    <navigator url="/pages/setting/setting" class="menu-item">
+      <text class="menu-item-text">设置</text>
+    </navigator>
+  </view>
+</view>

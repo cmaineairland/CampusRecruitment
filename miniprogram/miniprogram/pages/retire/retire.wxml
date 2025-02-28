@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="form-item">
+    <text>学生ID：</text>
+    <input type="text" placeholder="请向管理员咨询学生ID" model:value="{{studentId}}" bindinput="onInputChange" data-field="studentId"/>
+  </view>
+
+  <view class="form-item">
+    <text>管理员ID：</text>
+    <input type="text" placeholder="请向管理员咨询管理员ID" model:value="{{adminId}}" bindinput="onInputChange" data-field="adminId"/>
+  </view>
+
+
+  <view class="form-item">
+    <text>备注：</text>
+    <input type="text" placeholder="请输入备注" model:value="{{address}}" bindinput="onInputChange" data-field="address"/>
+  </view>
+
+  <button class="submit-btn" bindtap="submitStudentInfo">提交</button>
+
+  <view class="response-message" wx:if="{{responseMessage}}">
+    <text>{{responseMessage}}</text>
+  </view>
+</view>

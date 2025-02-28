@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="chat-history">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="message {{item.isSelf? 'self' : 'other'}}">
+        <text>{{item.content}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="input-area">
+    <textarea placeholder="请输入内容" bindinput="onInput" maxlength="256"/>
+    <button bindtap="sendMessage">发送</button>
+  </view>
+</view>

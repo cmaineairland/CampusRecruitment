@@ -1,0 +1,6 @@
+<view class="news-container">
+  <view class="news-item" wx:for="{{newsList}}" wx:key="newsId" bindtap="navigateToNews" data-url="{{item.url}}">
+    <view class="news-title">{{item.title}}</view>
+    <view class="news-time">{{item.time}}</view>
+  </view>
+</view>

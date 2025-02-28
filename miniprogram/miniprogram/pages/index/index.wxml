@@ -1,0 +1,29 @@
+<!-- index.wxml -->
+
+<view class="container">
+  <view class="main-picture-box">
+    <image src="../../images/picture/indexMainPicture.png" class="main-picture"></image>
+  </view>
+</view>
+<view class="user-info">
+  <view class="user-avatar">
+    <image src="../../images/picture/tast-user-avatar.jpg" class="avatar-picture"></image>
+  </view> 
+  <view class="user-name">用户昵称</view>
+  <view class="user-class">
+    <text class="user-class-text">计算机科学与工程学院\n</text>
+    <text class="user-class-text">计算机科学与技术·23201</text>
+  </view>
+  <view class="bottom">
+    <view class="mid-bar">
+      <image src="../../images/picture/报名参军.png" class="mid-bar-button" bindtap="goToPageConscription" />
+      <image src="../../images/picture/退役复学.png" class="mid-bar-button" bindtap="goToPageRetire"/>
+      <image src="../../images/picture/信息填报.png" class="mid-bar-button" bindtap="goToPageWriteInfo"/>
+    </view>
+    <view class="announcement">
+      <text class="announcement-title">通知公告\n</text>
+      <text class="announcement-text">根据国家和上级军队有关规定，结合我校征兵工作安排，2025年春季征兵工作现已开始。我校在读学生与应届毕业生可使用本小程序进行网上信息填报。用户先点击“信息填报”按钮，经后台审核完毕发放学生ID后即可报名参军。</text>
+    </view>
+  </view>
+</view>
+

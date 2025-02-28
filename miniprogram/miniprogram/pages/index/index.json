@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  },
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "参军退役小程序"
+}

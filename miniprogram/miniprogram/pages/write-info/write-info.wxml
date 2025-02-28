@@ -1,0 +1,68 @@
+<view class="container">
+  <view class="form-item">
+    <text>学生姓名：</text>
+    <input type="text" placeholder="请输入学生姓名" model:value="{{studentName}}" bindinput="onInputChange" data-field="studentName"/>
+  </view>
+
+  <view class="form-item">
+    <text>电话号码：</text>
+    <input type="text" placeholder="请输入电话号码" model:value="{{phoneNumber}}" bindinput="onInputChange" data-field="phoneNumber"/>
+  </view>
+
+  <view class="form-item">
+    <text>入学年份：</text>
+    <input type="date" placeholder="请输入入学年份" model:value="{{enterSchoolYear}}" bindinput="onInputChange" data-field="enterSchoolYear"/>
+  </view>
+
+  <view class="form-item">
+    <text>学院：</text>
+    <input type="text" placeholder="请输入学院名称" model:value="{{college}}" bindinput="onInputChange" data-field="college"/>
+  </view>
+
+  <view class="form-item">
+    <text>专业：</text>
+    <input type="text" placeholder="请输入专业名称" model:value="{{major}}" bindinput="onInputChange" data-field="major"/>
+  </view>
+
+  <view class="form-item">
+    <text>班级：</text>
+    <input type="text" placeholder="请输入班级名称" model:value="{{class}}" bindinput="onInputChange" data-field="class"/>
+  </view>
+
+    <view class="form-item">
+      <label>照片:</label>
+      <button bindtap="choosePhoto">选择照片</button>
+      <image wx:if="{{photo}}" src="{{photo}}" mode="aspectFill" class="photo" />
+    </view>
+
+  
+
+    <view class="form-item">
+    <text>民族：</text>
+    <picker mode="selector" range="{{ethnicList}}" value="{{ethnicIndex}}" bindchange="onEthnicChange">
+      <view class="picker">
+        <input class="picker-input" disabled value="{{ethnicList[ethnicIndex]}}" placeholder="请选择民族" />
+      </view>
+    </picker>
+  </view>
+
+  <view class="form-item">
+    <text>政治面貌：</text>
+    <picker mode="selector" range="{{politicalList}}" value="{{politicalIndex}}" bindchange="onPoliticalChange">
+      <view class="picker">
+        <input class="picker-input" disabled value="{{politicalList[politicalIndex]}}" placeholder="请选择政治面貌" />
+      </view>
+    </picker>
+  </view>
+
+  <view class="form-item">
+    <text>地址：</text>
+    <input type="text" placeholder="请输入地址" model:value="{{address}}" bindinput="onInputChange" data-field="address"/>
+  </view>
+
+  <button class="submit-btn" bindtap="submitStudentInfo">提交</button>
+
+  <view class="response-message" wx:if="{{responseMessage}}">
+    <text>{{responseMessage}}</text>
+  </view>
+</view>
